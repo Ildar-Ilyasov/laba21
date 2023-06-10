@@ -16,11 +16,6 @@ class User implements Listener{
         group.subscribe(this);
     }
 
-    public void unsubscribe(Group group) {
-        groupList.remove(group);
-        group.unsubscribe(this);
-    }
-
     @Override
     public void update(String str) {
         System.out.println(this.name + ": " + str);

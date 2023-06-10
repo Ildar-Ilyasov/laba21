@@ -13,9 +13,6 @@ public class Group {
         subscribers.add(subscriber);
     }
 
-    void unsubscribe(Listener subscriber) {
-        subscribers.remove(subscriber);
-    }
 
     void informUsers(String str) {
         for (Listener subscriber : subscribers) {
