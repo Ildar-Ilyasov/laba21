@@ -17,6 +17,7 @@ class User implements Listener{
 
     @Override
     public void update(String str) {
+
         System.out.println(this.name + ": " + str);
     }
 }
